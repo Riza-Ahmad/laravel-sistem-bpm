@@ -38,11 +38,13 @@
     </div>
 
     <div class="ms-5 ps-5">
-        <a class="btn btn-primary" href="{{ route('peraturan.add') }}">Tambah Peraturan</a>
+        {{-- <a class="btn btn-primary" href="{{ route('peraturan.add') }}">Tambah Peraturan</a> --}}
+        <a class="btn btn-primary" href="#">Tambah Peraturan</a>
     </div>
 
     <div class="ms-5 p-5 pt-0 pb-0 my-3">
-        <form action="{{ route('peraturan.searchRead') }}" method="GET" class="d-flex">
+        {{-- <form action="{{ route('peraturan.searchRead') }}" method="GET" class="d-flex"> --}}
+            <a class="btn btn-primary" href="#">Tambah Peraturan</a>
             <input type="text" name="query" class="form-control me-2" placeholder="Cari berdasarkan judul peraturan..." value="{{ request('query') }}">
             <button type="submit" class="btn btn-primary">Cari</button>
         </form>

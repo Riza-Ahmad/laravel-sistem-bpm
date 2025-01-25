@@ -206,9 +206,29 @@
                     </ul>
                 </li>
 
+               {{-- <li class="nav-item dropdown">
+                    <!-- Menggunakan data-bs-toggle untuk mengaktifkan dropdown secara otomatis -->
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPeraturan" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Peraturan
+                    </a>
+                    <!-- Menambahkan dropdown-menu-end untuk menempatkan dropdown di sebelah kanan -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownPeraturan">
+                        <li>
+                            <a class="dropdown-item" href="{{ url('/peraturan/kebijakan') }}">Kebijakan Peraturan</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ url('/peraturan/eksternal') }}">Peraturan Eksternal</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ url('/peraturan/aps') }}">Instrumen APS</a>
+                        </li>
+                    </ul>
+                </li> --}}
                 <li class="nav-item dropdown">
-                    <button class="nav-link dropdown-toggle" onclick="toggleDropdown('peraturan')">Peraturan</button>
-                    <ul class="dropdown-menu" id="dropdown-peraturan" style="display: none;">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPeraturan" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Peraturan
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownPeraturan">
                         <li>
                             <a class="dropdown-item" href="{{ url('/peraturan/kebijakan') }}">Kebijakan Peraturan</a>
                         </li>
@@ -220,6 +240,7 @@
                         </li>
                     </ul>
                 </li>
+                
                 <li class="nav-item">
                     <button class="btn bg-white shadow-sm border-0">Masuk</button>
                 </li>
