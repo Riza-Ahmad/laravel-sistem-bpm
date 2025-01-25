@@ -8,7 +8,7 @@
     <div class="ms-5 ps-3">
         <div style="display: flex; align-items: center; ">
             <span style="color: #2654A1; font-size: 5rem; margin-right: 10px; cursor: pointer;" onclick="window.location.href='/berita'">&#x2039;</span>
-            <h2 style="color: #2654A1; margin: 0; padding-top:1rem;">Kelola Berita</h2>
+            <h2 style="color: #2654A1; margin: 0; padding-top:1rem;">Kelola Berdita</h2>
         </div>
     </div>
 

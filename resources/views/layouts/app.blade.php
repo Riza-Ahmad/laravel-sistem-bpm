@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laravel Sistem BPM</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Header tetap di atas */
@@ -224,22 +225,24 @@
                         </li>
                     </ul>
                 </li> --}}
+
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPeraturan" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Peraturan
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownPeraturan">
-                        <li>
-                            <a class="dropdown-item" href="{{ url('/peraturan/kebijakan') }}">Kebijakan Peraturan</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="{{ url('/peraturan/eksternal') }}">Peraturan Eksternal</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="{{ url('/peraturan/aps') }}">Instrumen APS</a>
-                        </li>
-                    </ul>
-                </li>
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPeraturan" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Peraturan
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownPeraturan">
+        <li>
+            <a class="dropdown-item" href="{{ url('/peraturan/kebijakan') }}">Kebijakan Peraturan</a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="{{ url('/peraturan/eksternal') }}">Peraturan Eksternal</a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="{{ url('/peraturan/instrument') }}">Instrumen APS</a>
+        </li>
+    </ul>
+</li>
+
                 
                 <li class="nav-item">
                     <button class="btn bg-white shadow-sm border-0">Masuk</button>
@@ -291,40 +294,44 @@
                             <a href="{{ $item['link'] }}" target="_blank" rel="noopener noreferrer" class="text-white">
                                 {{ $item['name'] }}
                             </a>
-                        </li>
-                        @endforeach
+                        </li> @endforeach
                     </ul>
                 </div>
 
                 <!-- Column 3: Contact -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h6 class="mt-5">KONTAK</h6>
-                    <p>
-                        <strong>Badan Penjaminan Mutu (BPM)</strong><br>
-                        Email: <a href="mailto:bpm@polytechnic.astra.ac.id" class="text-white">bpm@polytechnic.astra.ac.id</a><br>
-                        Politeknik Astra<br>
-                        Kawasan Industri Delta Silicon 2<br>
-                        Jl. Gaharu Blok F3 No. 1<br>
-                        Cibatu, Kec. Cikarang Selatan, Kab. Bekasi
-                    </p>
+                <div class="col-lg-4
+        col-md-6 mb-4">
+    <h6 class="mt-5">KONTAK</h6>
+    <p>
+        <strong>Badan Penjaminan Mutu (BPM)</strong><br>
+        Email: <a href="mailto:bpm@polytechnic.astra.ac.id" class="text-white">bpm@polytechnic.astra.ac.id</a><br>
+        Politeknik Astra<br>
+        Kawasan Industri Delta Silicon 2<br>
+        Jl. Gaharu Blok F3 No. 1<br>
+        Cibatu, Kec. Cikarang Selatan, Kab. Bekasi
+    </p>
 
-                    <!-- Social Media Icons -->
-                    <a href="https://www.instagram.com/astrapolytechnic/" target="_blank" class="btn px-1 py-0 text-white" title="Visit our Instagram">
-                        <i class="fi fi-brands-instagram" style="font-size: 20px; margin: 10px 5px;"></i>
-                    </a>
-                    <a href="https://www.youtube.com/c/PolmanAstrachannel" target="_blank" class="btn px-1 py-0 text-white" title="Visit our YouTube channel">
-                        <i class="fi fi-brands-youtube" style="font-size: 20px; margin: 10px 5px;"></i>
-                    </a>
-                    <a href="https://www.facebook.com/Astrapolytechnic/" target="_blank" class="btn px-1 py-0 text-white" title="Visit our Facebook page">
-                        <i class="fi fi-brands-facebook" style="font-size: 20px; margin: 10px 5px;"></i>
-                    </a>
-                    <a href="https://api.whatsapp.com/send/?phone=6281295582134" target="_blank" class="btn px-1 py-0 text-white" title="Contact us on WhatsApp">
-                        <i class="fi fi-brands-whatsapp" style="font-size: 20px; margin: 10px 5px;"></i>
-                    </a>
+    <!-- Social Media Icons -->
+    <a href="https://www.instagram.com/astrapolytechnic/" target="_blank" class="btn px-1 py-0 text-white"
+        title="Visit our Instagram">
+        <i class="fi fi-brands-instagram" style="font-size: 20px; margin: 10px 5px;"></i>
+    </a>
+    <a href="https://www.youtube.com/c/PolmanAstrachannel" target="_blank" class="btn px-1 py-0 text-white"
+        title="Visit our YouTube channel">
+        <i class="fi fi-brands-youtube" style="font-size: 20px; margin: 10px 5px;"></i>
+    </a>
+    <a href="https://www.facebook.com/Astrapolytechnic/" target="_blank" class="btn px-1 py-0 text-white"
+        title="Visit our Facebook page">
+        <i class="fi fi-brands-facebook" style="font-size: 20px; margin: 10px 5px;"></i>
+    </a>
+    <a href="https://api.whatsapp.com/send/?phone=6281295582134" target="_blank" class="btn px-1 py-0 text-white"
+        title="Contact us on WhatsApp">
+        <i class="fi fi-brands-whatsapp" style="font-size: 20px; margin: 10px 5px;"></i>
+    </a>
 
-                </div>
-            </div>
-        </div>
+    </div>
+    </div>
+    </div>
     </footer>
 
     <script>
@@ -347,6 +354,6 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
+    </body>
 
 </html>

@@ -36,4 +36,36 @@ class Peraturan extends Model
         "dok_modif_by",
         "dok_modif_date",
     ];
+
+    public function scopeFilterByType($query, $type)
+    {
+        if ($type) {
+            $query->where('type_column', $type); // Ganti 'type_column' sesuai dengan kolom tabel
+        }
+        return $query;
+    }
+
+    public function scopeSearch($query, $search)
+    {
+        if ($search) {
+            $query->where('dok_judul', 'LIKE', '%' . $search . '%');
+        }
+        return $query;
+    }
+
+    public function scopeFilterByYear($query, $year)
+    {
+        if ($year) {
+            $query->whereYear('dok_tgl_berlaku', $year);
+        }
+        return $query;
+    }
+
+    public function scopeFilterByStatus($query, $status)
+    {
+        if ($status) {
+            $query->where('dok_status', $status);
+        }
+        return $query;
+    }
 }
